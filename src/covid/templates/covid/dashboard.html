@@ -20,7 +20,7 @@
                 type: 'line',
                 data: {labels: {{ days_labels|safe }},
                         datasets: [{
-                            label: "Covid",
+                            label: {{ pays|safe }},
                             data: {{ data|safe }},
                             fill: false,
                             borderColor: 'rgb(255, 128, 128)'
