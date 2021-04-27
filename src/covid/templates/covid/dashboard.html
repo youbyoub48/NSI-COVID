@@ -11,9 +11,9 @@
             <div class="row">
                 <div class="col">
                     <h1 class="text-white">Stats Covid - {{ jours_label }}</h1>
-                    <a href="{% url 'stats' jours=7 mode=Mode Pays=Pays %}" class="btn btn-secondary">Semaine</a>
-                    <a href="{% url 'stats' jours=30 mode=Mode Pays=Pays %}" class="btn btn-secondary">Mois</a>
-                    <a href="{% url 'stats' jours=365 mode=Mode Pays=Pays %}" class="btn btn-secondary">Année</a>
+                    <a href="{% url 'stats' jours=7 mode=Mode Pays=Pays %}" class="btn {% if jours_label == 'Semaine' %}btn-info{% else %}btn-secondary{% endif %}">Semaine</a>
+                    <a href="{% url 'stats' jours=30 mode=Mode Pays=Pays %}" class="btn {% if jours_label == 'Mois' %}btn-info{% else %}btn-secondary{% endif %}">Mois</a>
+                    <a href="{% url 'stats' jours=365 mode=Mode Pays=Pays %}" class="btn {% if jours_label == 'Année' %}btn-info{% else %}btn-secondary{% endif %}">Année</a>
                 </div>
             </div>
             <div class="row justify-content-center">
