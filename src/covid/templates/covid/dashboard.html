@@ -14,6 +14,9 @@
                     <a href="{% url 'stats' jours=7 mode=Mode Pays=Pays %}" class="btn {% if jours_label == 'Semaine' %}btn-info{% else %}btn-secondary{% endif %}">Semaine</a>
                     <a href="{% url 'stats' jours=30 mode=Mode Pays=Pays %}" class="btn {% if jours_label == 'Mois' %}btn-info{% else %}btn-secondary{% endif %}">Mois</a>
                     <a href="{% url 'stats' jours=365 mode=Mode Pays=Pays %}" class="btn {% if jours_label == 'Année' %}btn-info{% else %}btn-secondary{% endif %}">Année</a>
+                    <a href="{% url 'stats' jours=jours mode='deaths' Pays=Pays %}" class="btn {% if mode_fr == 'Morts' %}btn-primary{% else %}btn-secondary{% endif %} ms-5">Morts</a>
+                    <a href="{% url 'stats' jours=jours mode='recovered' Pays=Pays %}" class="btn {% if mode_fr == 'Guéris' %}btn-primary{% else %}btn-secondary{% endif %}">Guéris</a>
+                    <a href="{% url 'stats' jours=jours mode='confirmed' Pays=Pays %}" class="btn {% if mode_fr == 'Cas Confirmé' %}btn-primary{% else %}btn-secondary{% endif %}">Cas Confirmé</a>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -31,7 +34,7 @@
                     type: 'line',
                     data: {labels: {{ days_labels|safe }},
                             datasets: [{
-                                label: "{{ pays }}-{{ Mode }}",
+                                label: "{{ pays }}-{{ mode_fr }}",
                                 data: {{ data|safe }},
                                 fill: false,
                                 borderColor: 'rgb(255, 128, 128)'
