@@ -8,6 +8,14 @@
     </head>
     <body class="bg-dark">
         <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-white">Stats Covid - {{ jours_label }}</h1>
+                    <a href="{% url 'stats' jours=7 mode=Mode Pays=Pays %}" class="btn btn-secondary">Semaine</a>
+                    <a href="{% url 'stats' jours=30 mode=Mode Pays=Pays %}" class="btn btn-secondary">Mois</a>
+                    <a href="{% url 'stats' jours=365 mode=Mode Pays=Pays %}" class="btn btn-secondary">Année</a>
+                </div>
+            </div>
             <div class="row justify-content-center">
                 {% for pays, data in Data.items %}
                 <div class="col-md-10 col-lg-6">
