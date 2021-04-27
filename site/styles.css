@@ -7,3 +7,8 @@ header
     display: flex;
     justify-content: center;
 }
+#logo
+{
+    height: 5em;
+    width: auto;
+}
