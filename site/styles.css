@@ -2,13 +2,36 @@
 {
     background-color: #212529;
 }
+
 header
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
+
 #logo
 {
-    height: 3em;
-    width: 8em;
+    height: 30em;
+    width: 40em;
+}
+
+#virus
+{
+    height: 14em;
+    width: 16em;
+    margin-top: 3em;
+}
+#virus1
+{
+    height: 14em;
+    width: 16em;
+    margin-top: 3em;
+}
+h1
+{
+    font-family: cursive;
+}
+#bienvenue
+{
+    text-align: center;
 }
