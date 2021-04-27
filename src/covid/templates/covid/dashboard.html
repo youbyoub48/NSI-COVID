@@ -9,24 +9,28 @@
     <body class="bg-dark">
         <div class="container-fluid">
             <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-6">
-                    <canvas id="chart"></canvas>
+                {% for pays, data in Data.items %}
+                <div class="col-md-10 col-lg-6">
+                   <canvas id="chart-{{ pays }}"></canvas>-->
                 </div>
+                {% endfor %}
             </div>
         </div>
         <script>
-            var ctx = document.getElementById("chart");
-            new Chart(ctx, {
-                type: 'line',
-                data: {labels: {{ days_labels|safe }},
-                        datasets: [{
-                            label: {{ pays|safe }},
-                            data: {{ data|safe }},
-                            fill: false,
-                            borderColor: 'rgb(255, 128, 128)'
-                        }]
-                }
-            });
+            {% for pays, data in Data.items %}
+                var ctx = document.getElementById("chart-{{ pays }}");
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {labels: {{ days_labels|safe }},
+                            datasets: [{
+                                label: "{{ pays }}-{{ Mode }}",
+                                data: {{ data|safe }},
+                                fill: false,
+                                borderColor: 'rgb(255, 128, 128)'
+                            }]
+                    }
+                });
+            {% endfor %}
         </script>
     </body>
 </html>

@@ -18,7 +18,7 @@ from django.urls import path
 from covid.views import covid
 
 urlpatterns = [
-    path("jours=<int:jours>&Pays=<str:Pays>&mode=<str:mode>", covid),
+    path("jours=<int:jours>&mode=<str:mode>&Pays=<str:Pays>", covid),
     path("" , covid),
     path('admin/', admin.site.urls),
 ]

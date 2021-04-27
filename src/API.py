@@ -30,7 +30,8 @@ def Multi_Pays(pays, mode, jours=7):
     for line in pays:
         Cases = liste_cases[x]
         api_data[line] = Cases
-    return Date, api_data, pays
+        x += 1
+    return Date, api_data
             
 
 
