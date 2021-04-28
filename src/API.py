@@ -37,4 +37,5 @@ def Multi_Pays(pays, mode, jours=7):
 
 if __name__ == "__main__":
     #print(json.dumps(Covid_Pays("france","confirmed",jours=7), indent=4))
-    print(json.dumps(Multi_Pays(pays=["France","South-Africa"],mode="confirmed"), indent=4))
+    #print(json.dumps(Multi_Pays(pays=["France","South-Africa"],mode="confirmed"), indent=4))
+    Fichier()

@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from covid.views import covid
+from covid.views import covid, index, pays
 
 urlpatterns = [
     path("jours=<int:jours>&mode=<str:mode>&Pays=<str:Pays>", covid, name='stats'),
-    path("" , covid, name='home'),
+    path("", index),
+    path("pays.json", pays),
     path('admin/', admin.site.urls),
 ]

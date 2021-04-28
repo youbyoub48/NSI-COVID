@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <title>NSI COVID</title>
+        <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+        
+        
+        
+    </head>
+    
+    <body>
+        <header>
+            <img id="virus"src="{% static 'images/virus.png' %}">
+            <img id="logo" src="{% static 'images/logooo.png' %}">
+            <img id="virus1"src="{% static 'images/virus1.png' %}">
+        </header>
+        
+        <div id="bienvenue"> 
+            <h1>Bienvenue sur notre site qui référence les statistiques du coronavirus dans le monde entier !
+            </h1>
+            <a href="{% url 'stats' jours=30 mode='deaths' Pays='France' %}" class="bouton">Cliquez ici</a>
+         </div>
+        
+        
+        
+        
+        <footer>
+            <div class="foot">
+                <h2>Prochainement nous proposerons des statistiques sur d'autres virus dans le monde, restez connecter &#128521;
+                </h2>
+            </div>    
+        </footer>
+    </body>
+
+</html>
