@@ -15,6 +15,8 @@ pip install -r requirements.txt
 
 cd src
 
+python manage.py collectstatic
+
 python manage.py runserver
 
 puis allez sur le 127.0.0.1:80000
