@@ -1,0 +1,79 @@
+*
+{
+    background-color: #212529;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo
+{
+    height: 30em;
+    width: 40em;
+}
+
+#virus
+{
+    height: 14em;
+    width: 16em;
+    margin-top: 3em;
+}
+#virus1
+{
+    height: 14em;
+    width: 16em;
+    margin-top: 3em;
+}
+h1
+{
+    font-family: cursive;
+    font-size: 40px;
+}
+#bienvenue
+{
+    text-align: center;
+}
+h2
+{
+    font-family: cursive;
+    font-size: 30px;
+}
+    
+
+.foot
+{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bouton
+{   
+    color: #fff;
+    background-color: #008000;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
