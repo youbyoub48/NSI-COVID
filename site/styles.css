@@ -30,8 +30,50 @@ header
 h1
 {
     font-family: cursive;
+    font-size: 40px;
 }
 #bienvenue
 {
     text-align: center;
 }
+h2
+{
+    font-family: cursive;
+    font-size: 30px;
+}
+    
+
+.foot
+{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bouton
+{   
+    color: #fff;
+    background-color: #008000;
+    padding: 6px 20px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
