@@ -3,7 +3,7 @@ import requests
 import json
 
 def Covid_Pays(pays, mode, jours=30):
-    debut_date = date.today()
+    debut_date = date.today() - timedelta(days=1)
     fin_date = debut_date - timedelta(days=jours)
     get = requests.get(f"https://api.covid19api.com/total/country/{pays}/status/{mode}?from={fin_date}T00:00:00Z&to={debut_date}T00:00:00Z")
     if not get and not get.json():
