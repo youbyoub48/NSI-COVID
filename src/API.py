@@ -32,7 +32,7 @@ def Multi_Pays(pays, mode, jours=7):
         api_data[line] = Cases
         x += 1
     return Date, api_data
-            
+
 
 
 if __name__ == "__main__":
