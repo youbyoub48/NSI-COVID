@@ -19,6 +19,6 @@ from covid.views import covid
 
 urlpatterns = [
     path("jours=<int:jours>&mode=<str:mode>&Pays=<str:Pays>", covid, name='stats'),
-    path("" , covid),
+    path("" , covid, name='home'),
     path('admin/', admin.site.urls),
 ]
