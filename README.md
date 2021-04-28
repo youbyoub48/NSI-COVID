@@ -1,5 +1,5 @@
 # NSI-COVID- BILAL ET AYOUB
-Désolé pur l'instant on a pas réussi a mettre en ligne le site donc si vous voulez le lancer uiliser
+Désolé pour l'instant on a pas réussi a mettre en ligne le site donc si vous voulez le lancer uiliser
 
 git clone https://github.com/youbyoub48/NSI-COVID.git
 
