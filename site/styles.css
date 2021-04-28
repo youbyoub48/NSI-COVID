@@ -45,7 +45,7 @@ h2
 
 .foot
 {
-    margin-top: 100px;
+    margin-top: 130px;
     text-align: center;
 }
 
@@ -59,6 +59,16 @@ h2
     font-size: 40px;
 }
 
+.pays
+{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
+}
+.lienpays
+{
+    color: grey
+}
 
 
 
