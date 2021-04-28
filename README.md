@@ -1,4 +1,7 @@
 # NSI-COVID- BILAL ET AYOUB
+finalements ona réussi : 
+lien : http://51.91.251.170/
+
 Désolé pour l'instant on a pas réussi a mettre en ligne le site donc si vous voulez le lancer uiliser
 
 git clone https://github.com/youbyoub48/NSI-COVID.git
