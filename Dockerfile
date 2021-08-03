@@ -1,8 +1,4 @@
-FROM ubuntu:20.04
-
-RUN apt-get update \
-    && apt-get install python3 python3-pip -y\
-    && pip install --upgrade pip
+FROM python:3.8-slim
 
 ADD . /app/
 WORKDIR /app
